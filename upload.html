@@ -1,14 +1,5 @@
 <html>
 <head>
-<script>
-function validateForm() {
-  var x = document.forms["myForm"]["filename"].value;
-  if (x == "" || x == null) {
-    alert("Error....!! File must be filled out");
-    return false;
-  }
-}
-</script>
 <style>
 #myProgress {
   width: 100%;
@@ -86,6 +77,15 @@ function validateForm() {
     <tr>
       <td><input type="file" id="myFile" name="filename"></td>
       <td><button onClick=validateForm() ><a href="https://deep-majhi.github.io/deepmajhi123/Submit.html" onclick="validateForm();">Submit</a></button></td>
+      <script>
+function validateForm() {
+  var x = document.forms["myForm"]["filename"].value;
+  if (x == "" || x == null) {
+    alert("Error....!! File must be filled out");
+    return false;
+  }
+}
+</script>
     </tr>
   </table>
   
