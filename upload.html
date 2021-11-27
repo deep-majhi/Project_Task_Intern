@@ -1,0 +1,93 @@
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["filename"].value;
+  if (x == "" || x == null) {
+    alert("Error....!! File must be filled out");
+    return false;
+  }
+}
+</script>
+<style>
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #04AA6D;
+}
+
+</style>
+
+<style>
+        body{
+            background:white;
+        }
+        .box{
+            position:absolute;
+            top:150px;
+            left:60px;
+            
+        }
+        #choose_file{
+            width:300px;
+            background:white;
+            border:none;
+            outline:none;
+            box-shadow: 2px 5px 2px black;
+            border-radius:50px;
+        }
+        ::-webkit-file-upload-button{
+            border:none;
+            background:#8a1702fa;
+            border-radius:50px;
+            height:40px;
+            color:white;
+            width:100px;
+            box-shadow: 2px 0px 0px grey;
+        }
+        progress{
+          width:  100%;
+          height:  30px;
+          -webkit-appearance: none;
+          border-radius: 5px;
+
+        }
+        progress::-webkit-process-bar{
+          width:  100%;
+          height:  20px;
+          background: whitesmoke;
+        }
+        progress::-webkit-progress-value{
+          background: skyblue;
+        }
+
+        }
+        
+    </style>
+    
+</head>
+<body>
+  
+  <br><br><br><br><br>
+    <center><img src="C:\Users\Admin\OneDrive\Desktop\upg.png"></center>
+<br><br><br><br><br><br>
+<center><p><h1>Click on the "Choose File" button to upload a file:</p></h1>
+
+<form action="C:\Users\Admin\OneDrive\Desktop\Submit.html" name="myForm" onsubmit="return validateForm()" method="post" required>
+  <table>
+    <tr>
+      <td><input type="file" id="myFile" name="filename"></td>
+      <td><button onclick="document.getElementById('myImage').src=''"><img src="C:\Users\Admin\OneDrive\Desktop\Subbutton.jpg" width="150px" height="60px"></button></td>
+    </tr>
+  </table>
+  </form>
+</center>
+
+
+</body>
+</html>

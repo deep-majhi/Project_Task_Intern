@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Task Project</h2>
+
+
+  <div class="imgcontainer">
+    <img src="C:\Users\Admin\OneDrive\Desktop\project1.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+
+    <center><label for="cars"><b>You Are:</b></label>
+    <select name="Task" id="Task">
+     <option value="Front-End Engineer">Front-End Engineer</option>
+     <option value="Back-End Engineer">Back-End Engineer</option>
+     <option value="Full Stack Engineer">Full Stack Engineer</option>
+     <option value="Software Engineer in Test (QA Engineer)">Software Engineer in Test (QA Engineer)</option>
+     <option value="DevOps Engineer">DevOps Engineer</option>
+     <option value="Security Engineer">Security Engineer</option>
+     <option value="Aerospace Engineer">Aerospace Engineer</option>
+     <option value="Agricultural Engineer">Agricultural Engineer</option>
+
+     <option value="Data Engineer">Data Engineer</option>
+     <option value="Geological Engineer">Geological Engineer</option>
+     <option value="Software Engineer">Software Engineer</option>
+     <option value="Drafting and Design Engineer">Drafting and Design Engineer</option>
+     <option value="Civil Engineer">Civil Engineer</option>
+     <option value="Database Management Administrator">Database Management Administrator</option>
+     <option value="Web Developer">Web Developer</option>
+
+    </select>
+    <button onclick="myFunction()">Check Your Work/Task</button>
+
+<script>
+function myFunction() {
+  var y = document.getElementById("Task").selectedIndex;
+  if (y==0){
+    alert("Your Task : Explain how you would ensure that your web design is user-friendly and what kinds of steps would you use?")
+  }
+  if (y==1){
+    alert("Your Task : What REST stands for? ")
+  }
+  if (y==2){
+    alert("Your Task : What is the main difference between GraphQL and REST? ")
+  }
+  if (y==3){
+    alert("Your Task : What's important when checking a team member's code?")
+  }
+  if (y==4){
+    alert("Your Task : What do you know about DevOps? ")
+  }
+  if (y==5){
+    alert("Your Task : How do you secure your home network?")
+  }
+  if (y==6){
+    alert("Your Task : What Are the Daily Responsibilities of an Aerospace Engineer? ")
+  }
+  if (y==7){
+    alert("Your Task : What is the contribution of Animal Husbandry Sector in the agricultural growth ? ")
+  }
+  if (y==8){
+    alert("Your Task : Why do you want this job As Engineer Geological?")
+  }
+  if (y==9){
+    alert("Your Task : What are the important categories of software? ")
+  }
+  if (y==10){
+    alert("Your Task : What are some of the pop-up boxes available in JavaScript? Explain them. ")
+  }
+  if (y==11){
+    alert("Your Task :How to integrate different stylesheets into a website? ")
+  }
+  if (y==12){
+    alert("Your Task : Enlist some of the latest form elements of HTML5")
+  }
+  if (y==13){
+    alert("Your Task : What is CORA? Why is it so important? ")
+  }
+  if (y==14){
+    alert("Your Task :Explain the key responsibilities of a Web Developer?  ")
+  }
+}
+</script>
+
+
+</center> 
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    
+    <center><a href="C:\Users\Admin\OneDrive\Desktop\Exit.html"><button type="button" class="cancelbtn">Cancel</button></a>
+    
+    </center>
+    
+  </div>
+  <form action="C:\Users\Admin\OneDrive\Desktop\upload.html" method="post">
+
+    <button onclick="GetNextPage()">NEXT</button>
+</form>
+
+</body>
+</html>
+
