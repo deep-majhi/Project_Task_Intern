@@ -1,16 +1,14 @@
 <html>
 <head>
 <script>
-    function validateForm() {
-     var x = document.forms["myForm"]["filename"].value;
+function validateForm() {
+  var x = document.forms["myForm"]["filename"].value;
   if (x == "" || x == null) {
     alert("Error....!! File must be filled out");
     return false;
   }
-      
 }
 </script>
-  
 <style>
 #myProgress {
   width: 100%;
@@ -68,7 +66,7 @@
           background: skyblue;
         }
 
-        }
+        
         
     </style>
     
@@ -76,24 +74,19 @@
 <body>
   
   <br><br><br><br><br>
-    <center><img src="https://deep-majhi.github.io/deepmajhi123/upg.png"></center>
+    <center><img src="C:\Users\Admin\OneDrive\Desktop\deepmajhi123\upg.png"></center>
 <br><br><br><br><br><br>
 <center><p><h1>Click on the "Choose File" button to upload a file:</p></h1>
 
- 
-  <table>
-    <tr>
-      <td><input type="file" id="myFile" name="filename"></td>
-      <td><button onsubmit="return validateForm()" name="myForm" onclick="validateForm()"><img src="https://deep-majhi.github.io/deepmajhi123/Subbutton.jpg"
- width="150px" height="60px"></button>
-
-
-
-
-</td>
-    </tr>
-  </table>
-
+  <form action="C:\Users\Admin\OneDrive\Desktop\deepmajhi123\Submit.html" name="myForm" onsubmit="return validateForm()" method="post" required>
+    <table>
+      <tr>
+        <td><input type="file" id="myFile" name="filename"></td>
+        <td><button onclick="document.getElementById('myImage').src=''"><img src="C:\Users\Admin\OneDrive\Desktop\deepmajhi123\Subbutton.jpg" width="150px" height="60px"></button></td>
+      </tr>
+    </table>
+    </form>
+  
 </center>
 
 
